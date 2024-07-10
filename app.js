@@ -5,6 +5,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 });
 
+
+
+let sign = document.getElementById("sign");
+sign.addEventListener("click", () => {
+  location.href = "index.html";
+});
+
+
+
 function Signup() {
   let username = document.getElementById('suser').value;
   let email = document.getElementById('semail').value;
@@ -49,3 +58,4 @@ function login() {
 function showSignupForm() {
   document.getElementById('chk').checked = false;
 }
+

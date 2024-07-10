@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const user = localStorage.getItem('user');
     if (!user) {
@@ -125,3 +128,6 @@ function logout() {
 }
 
 window.onload = loadProducts;
+
+
+
