@@ -4,42 +4,26 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="x-icon" href="foodpanda_logo_2023.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Panda</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="align">
-    <div class="main">
-        <input type="checkbox" id="chk" aria-hidden="true">
-        <div class="signup">
-            <form action="/">
-                <label for="chk" aria-hidden="true">Sign Up</label>
-                <input type="text" name="txt" placeholder="UserName" id="suser">
-                <input type="email" name="email" placeholder="Email" id="semail">
-                <input type="password" name="psw" placeholder="Password" id="spass">
-                <i class="fa-solid fa-fingerprint" id="spass" onclick="myfunc()"></i>
-                <input type="password" name="psw" placeholder="Confirm Password" id="pass2">
-                <button type="button" onclick="Signup()">Sign Up</button>
-            </form>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./foodpanda_logo_2023.svg" alt="">
+            <ul id="menulist">
+                <li><a href="#">Home</li>
+                <li><a href="#">Service</li>
+                <li><a href="#">Product</li>
+                <li><a href="#">Contact</li>
+                <li><a id="sign" href="#">Sign Up</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggle()"></i>
+            </div>
         </div>
-        <div class="login">
-            <form action="/">
-                <label for="chk" aria-hidden="true">Login</label>
-                <input type="email" name="email" id="lemail" placeholder="Email" required>
-                <div class="form__field">
-                    <input type="password" class="form__input" id="lpass" pattern=".{6,}"
-                        placeholder="Enter your password" required>
-                    <span class="icon"></span>
-                </div>
-                <button type="button" onclick="login()">Login</button>
-                <p>Don't have an account? <a href="#" onclick="showSignupForm()">Create Account</a></p>
-            </form>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </nav>
     <script src="app.js"></script>
-
 </body>
 </html>

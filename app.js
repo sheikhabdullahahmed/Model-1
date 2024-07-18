@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 let sign = document.getElementById("sign");
 sign.addEventListener("click", () => {
-  location.href = "index.html";
+  location.href = "signup.html";
 });
 
 
